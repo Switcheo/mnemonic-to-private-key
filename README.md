@@ -18,6 +18,6 @@ npm install
 
 #### 3.
 ```
-MNEMONIC='first second third forth fifth sixth seventh eighth ninth tenth eleventh twelfth thirteenth fourteenth fifteenth sixteenth' node .
+MNEMONIC='first second third forth fifth sixth seventh eighth ninth tenth eleventh twelfth' node .
 ```
 # mnemonic-to-private-key
