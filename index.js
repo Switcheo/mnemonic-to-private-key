@@ -13,6 +13,9 @@ function getKey(root, coinType) {
 
 function printPrivateKeys(_mnemonic = null) {
   const mnemonic = _mnemonic || bip39.generateMnemonic()
+  if (!bip39.validateMnemonic(mnemonic)) {
+    throw new Error('Invalid mnemonic!')
+  }
   const seed = bip39.mnemonicToSeed(mnemonic)
   const root = hdkey.fromMasterSeed(seed)
 
