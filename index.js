@@ -11,7 +11,8 @@ function getKey(root, coinType) {
   return addrNode._privateKey.toString('hex')
 }
 
-function printPrivateKeys(mnemonic) {
+function printPrivateKeys(_mnemonic = null) {
+  const mnemonic = _mnemonic || bip39.generateMnemonic()
   const seed = bip39.mnemonicToSeed(mnemonic)
   const root = hdkey.fromMasterSeed(seed)
 
