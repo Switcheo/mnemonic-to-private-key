@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bip39": "^2.5.0",
-    "bip44-constants": "^7.0.0",
+    "bip44-constants": "^8.0.13",
     "hdkey": "^1.1.0"
   }
 }
